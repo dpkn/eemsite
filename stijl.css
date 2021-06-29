@@ -17,11 +17,15 @@
         *{
             box-sizing: border-box;
         }
-        .container{
+        .container, .spotify{
+            margin:20px;
             padding:50px;
             background:#fff;
             border:5px solid #000;
 
+        }
+        .spotify{
+            padding:5px;
         }
         .name{
             font-size: 3em;
