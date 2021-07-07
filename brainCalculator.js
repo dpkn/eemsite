@@ -28,3 +28,26 @@ function doBraintest(){
 
     document.getElementById('result').innerHTML = result;
 }
+
+function moodAnalysis(){
+    let answer = prompt('What is your mood at the moment? \n\nA. You are feeling overwhelmed. \nB. You are feeling frustrated/irritated. \nC. You are feeling misunderstood. \nD. You are feeling CHONKY. \nE. You are feeling sad.\n');
+    let solution = '';
+
+    if(answer == 'a' || answer == 'A'){
+        solution = 'Ask your partner for some space.';
+    }else if(answer == 'b' || answer == 'B'){
+        solution = 'Dance it out if it has already been talked about.';
+    }else if(answer == 'c' || answer == 'B'){
+        solution = 'Ask your partner if they have time and space to talk about the issue.';
+    }else if(answer == 'd' || answer == 'D'){
+        solution = 'You tell your partner that you are feeling CHONKY and hope they feel CHONKY too.';
+    }else if(answer == 'e' || answer == 'E'){
+        solution = 'Tell your partner what is making you feel sad and see if there is anything that can be done about it.';
+    }else{
+        solution = 'Please type in a valid answer and try again!';
+        moodAnalysis();
+        return;
+    }
+
+    document.getElementById('result').innerHTML = solution;
+}
