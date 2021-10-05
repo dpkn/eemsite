@@ -51,3 +51,14 @@ function moodAnalysis(){
 
     document.getElementById('result').innerHTML = solution;
 }
+
+
+function checkBirthday(){
+    let answer = prompt('To prove it is your birthday, please enter the ');
+
+    if(answer == 'a' || answer == 'A'){
+       window.location.href = 'http://emilie.vip/birthday'
+    }else{
+        checkBirthday();
+    }
+}
