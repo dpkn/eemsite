@@ -54,10 +54,12 @@ function moodAnalysis(){
 
 
 function checkBirthday(){
-    let answer = prompt('To prove it is your birthday, please enter the ');
+    let answer = prompt('To prove it is your birthday, please enter your age.');
 
-    if(answer == 'a' || answer == 'A'){
-       window.location.href = 'http://emilie.vip/birthday'
+    if(answer == '21' || answer == '21'){
+        if (confirm('You are very old. Are you sure you want to know what your present is?')) {
+            window.location.href = 'http://emilie.vip/birthday'
+        }
     }else{
         checkBirthday();
     }
